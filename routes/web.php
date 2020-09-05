@@ -20,7 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/consulta', ['uses'=>'HomeController@consulta','as'=>'consultaUsuario.index']);
-//Route::get('/exame', ['uses'=>'HomeController@exame','as'=>'exame.index']);
 Route::get('/exame', ['uses'=>'ExamesController@listaExame','as'=>'exame.index']);
 Route::get('/perfil', ['uses'=>'HomeController@perfil','as'=>'perfil.index']);
 Route::post('/perfil', ['uses'=>'HomeController@perfilAtualiza','as'=>'perfil.index']);

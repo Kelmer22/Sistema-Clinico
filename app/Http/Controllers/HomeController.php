@@ -66,9 +66,7 @@ class HomeController extends Controller
     }
 
 
-  public function agenda()
-
-    {    
+  public function agenda(){    
         
         return view('usuario.atendimento.atendimento');
     }
